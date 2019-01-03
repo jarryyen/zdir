@@ -4,6 +4,16 @@
 	include_once("./config.php");
 	//载入zdir类
 	include_once("./functions/zdir.class.php");
+	//检测是否需要登录验证
+    if($config['login'] == true && $_COOKIE['loginstatus'] != 'admin'){
+        header("location:login.php");
+    }
+
+
+
+
+
+
 	@$admin = $_GET['admin'];
 	//获取当前目录
 	$thedir = __DIR__;

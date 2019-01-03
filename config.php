@@ -27,6 +27,8 @@
 			"127.0.0.1",
 			"192.168.1."
 		),
-		"password"	=>	"xiaoz.me"
+		"password"	=>	"xiaoz.me",
+        "username"  =>  "xiaoz.me",
+        "login"     =>  true, //如果为true就需要登录验证，如果为false则不需要验证登录
 	);	
 ?>
