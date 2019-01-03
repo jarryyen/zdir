@@ -1,12 +1,12 @@
 <?php
 include_once("./config.php");
-if($config['login'] == true && $_COOKIE['loginstatus'] == 'admin'){
+if($config['login'] == true && $_COOKIE['loginstatus'] == $md5){
     header("location:index.php");
 }
 
 $postData = $_POST;
 if($postData['username'] == $config['username'] && $postData['username'] == $config['password']){
-    setcookie('loginstatus','admin');var_dump($_COOKIE);die;
+    setcookie('loginstatus',$md5);
     header("location:index.php");
 
 }

@@ -30,5 +30,8 @@
 		"password"	=>	"xiaoz.me",
         "username"  =>  "xiaoz.me",
         "login"     =>  true, //如果为true就需要登录验证，如果为false则不需要验证登录
-	);	
+	);
+
+	//设置cookie混淆信息
+    $md5 = md5('这里是混淆代码请务必进行更改');
 ?>

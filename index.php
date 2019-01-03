@@ -5,7 +5,7 @@
 	//载入zdir类
 	include_once("./functions/zdir.class.php");
 	//检测是否需要登录验证
-    if($config['login'] == true && $_COOKIE['loginstatus'] != 'admin'){
+    if($config['login'] == true && $_COOKIE['loginstatus'] != $md5){
         header("location:login.php");
     }
 

@@ -31,8 +31,8 @@
                             <li class="layui-nav-item"><a href="https://doc.xiaoz.me/#/zdir/" target = "_blank" rel = "nofollow"><i class="fa fa-file-text-o" aria-hidden="true"></i> 帮助文档</a></li>
                             <li class="layui-nav-item"><a href="https://www.xiaoz.me/archives/10465" target = "_blank"><i class="layui-icon">&#xe60b;</i> 关于</a></li>
                             <?php
-                            if($_COOKIE['loginstatus'] == 'admin'){
-                                echo '                            <li class="layui-nav-item"><a href="./logout.php" target = "_blank"><i class="layui-icon">&#xe60b;</i> 登出</a></li>';
+                            if($_COOKIE['loginstatus'] == $md5){
+                                echo '                            <li class="layui-nav-item"><a href="./logout.php" target = "_self"><i class="layui-icon">&#xe60b;</i> 登出</a></li>';
                             }
 
                                 ?>
